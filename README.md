@@ -22,21 +22,28 @@ Deploy a functional WordPress website on an Ubuntu EC2 instance by configuring t
 - MySQL — Stores WordPress content and configuration data
 - WordPress — Content management system (CMS)
 
-<img width="800" src="images/ec2-instance.png"/>
+
 
 ### Implementation Steps
 
-1. **Provisioned an EC2 instance:** Launched an Ubuntu virtual server in AWS.
-2. **Connected via SSH:** Established secure remote access to the instance.
-3. **Updated the operating system:** Applied available package updates.
-4. **Installed the application stack:** Configured Apache, PHP, PHP-MySQL integration, and MySQL Server.
-5. **Configured services:** Started Apache and MySQL and enabled them to launch at system startup.
-6. **Secured the database:** Ran `mysql_secure_installation` and configured database access.
-7. **Installed WordPress:** Downloaded and extracted the WordPress application files into Apache's web directory.
-8. **Configured file permissions:** Set ownership and permissions for the application files.
-9. **Created the WordPress database:** Created `wordpress_db` and a dedicated MySQL user with database privileges.
-10. **Configured the application:** Updated `wp-config.php` with the database name, username, and password.
-11. **Launched and tested WordPress:** Accessed the EC2 public IP address and completed the initial WordPress setup.
+1. **Provisioned an EC2 instance:**
+      Launched an Ubuntu Server in AWS using version 24.04 ami. Also used t3.small for 2GBs of RAM.
+   <img width="800" src="images/ec2-instance.png"/>
+
+3. **Updated the operating system:**
+   Updating the package manager and the applications/security features in on the server.
+```bash
+sudo apt update && sudo apt upgrade
+```
+5. Applied available package updates.
+6. **Installed the application stack:** Configured Apache, PHP, PHP-MySQL integration, and MySQL Server.
+7. **Configured services:** Started Apache and MySQL and enabled them to launch at system startup.
+8. **Secured the database:** Ran `mysql_secure_installation` and configured database access.
+9. **Installed WordPress:** Downloaded and extracted the WordPress application files into Apache's web directory.
+10. **Configured file permissions:** Set ownership and permissions for the application files.
+11. **Created the WordPress database:** Created `wordpress_db` and a dedicated MySQL user with database privileges.
+12. **Configured the application:** Updated `wp-config.php` with the database name, username, and password.
+13. **Launched and tested WordPress:** Accessed the EC2 public IP address and completed the initial WordPress setup.
 
 ### Evidence
 
