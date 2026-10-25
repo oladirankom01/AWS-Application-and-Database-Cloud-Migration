@@ -294,6 +294,8 @@ FROM towsonuni_db_migrated.student;
 
 The migration was completed successfully, and the sample record counts matched the source database.
 
+<img width="900" src="images/towsonuni_migrated-tables.png"/>
+
 ### Evidence
 
 Add screenshots showing the source database, export, file transfer, import, and validation.
