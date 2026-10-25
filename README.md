@@ -64,6 +64,11 @@ sudo systemctl enable mysql
 
 Ensuring these applications were actively running
 
+```bash
+sudo systemctl status apache2
+sudo systemctl status mysql
+```
+
 <img width="800" src="images/apache-active.png"/>
 <img width="800" src="images/mysql-active.png"/>
 
