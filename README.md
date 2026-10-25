@@ -2,7 +2,7 @@
 
 ## Overview
 
-<img width="1000" src="Cloud Migration Projects Network Diagram.png"/>
+<img width="800" src="Cloud Migration Projects Network Diagram.png"/>
 
 This repository documents hands-on cloud engineering projects completed using AWS. The projects demonstrate migrating the WordPress application and a MySQL database from a local Windows environment to an AWS-hosted Ubuntu server.
 
