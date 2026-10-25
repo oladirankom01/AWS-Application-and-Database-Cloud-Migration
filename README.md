@@ -18,19 +18,9 @@ Deploy a functional WordPress website on an Ubuntu EC2 instance by configuring t
 **AWS EC2 (Ubuntu Linux)**
 
 - Apache — Web server
-- PHP — Executes WordPress application code
+- PHP — Programming Language to execute WordPress application code
 - MySQL — Stores WordPress content and configuration data
 - WordPress — Content management system (CMS)
-
-### Technologies Used
-
-- Amazon EC2
-- Ubuntu Linux
-- Apache HTTP Server
-- PHP
-- MySQL
-- WordPress
-- SSH
 
 ### Implementation Steps
 
