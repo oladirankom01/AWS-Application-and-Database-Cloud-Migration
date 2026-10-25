@@ -22,6 +22,8 @@ Deploy a functional WordPress website on an Ubuntu EC2 instance by configuring t
 - MySQL — Stores WordPress content and configuration data
 - WordPress — Content management system (CMS)
 
+<img width="500" src="images/ec2-intances.png"/>
+
 ### Implementation Steps
 
 1. **Provisioned an EC2 instance:** Launched an Ubuntu virtual server in AWS.
