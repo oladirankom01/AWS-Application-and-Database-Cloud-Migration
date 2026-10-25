@@ -196,6 +196,8 @@ The database also includes views and other database objects defined by the sourc
 
 Created the `TUDB` schema in MySQL on Windows and populated sample records in the Department, Employee, and Student tables.
 
+<img width="900" src="images/TU-DB.png"/>
+
 #### Step 2: Export the database
 
 Used `mysqldump` to export the schema and its data, including supported routines, triggers, and events, into a SQL dump file.
