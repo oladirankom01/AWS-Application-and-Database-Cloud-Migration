@@ -1,6 +1,9 @@
 # AWS-Application-and-Database-Cloud-Migration Project
 
 ## Overview
+
+<img src="Cloud Migration Projects Network Diagram.png"/>
+
 This repository documents hands-on cloud engineering projects completed using AWS. The projects demonstrate migrating the WordPress application and a MySQL database from a local Windows environment to an AWS-hosted Ubuntu server.
 
 Through these projects, I practiced Linux system administration, web server configuration, database management, secure file transfers, and post-migration validation.
