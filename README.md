@@ -209,6 +209,7 @@ Used `mysqldump` to export the schema and its data, including supported routines
   --routines --triggers --events `
   --result-file="$env:USERPROFILE\TUDB_migration.sql"
 ```
+<img width="900" src="images/datadump-TUDB_migration.png"/>
 
 #### Step 3: Transfer the dump securely
 
@@ -220,7 +221,7 @@ scp -i "C:\Users\<username>\okomolafe-keypair.pem" `
   ubuntu@<EC2-PUBLIC-IP>:/home/ubuntu/
 ```
 
-Replace the example username, key path, and IP address with your own environment values. Never commit private keys or credentials to GitHub.
+<img width="900" src="images/sshtransferdump.png"/>
 
 #### Step 4: Create the destination database
 
