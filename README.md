@@ -130,9 +130,7 @@ Accessed the EC2 public IP address and completed the initial WordPress setup.
 
 <img width="900" src="images/wordpress-connected.png"/>
 <img width="900" src="images/wordpress-app.png"/>
-
-
-
+<img width="900" src="images/wordpres_db.png"/>
 
 ### Evidence
 
