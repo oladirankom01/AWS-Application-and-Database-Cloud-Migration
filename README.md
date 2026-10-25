@@ -308,8 +308,6 @@ Add screenshots showing the source database, export, file transfer, import, and 
 | `images/dataload-towsonuni-migrated.png`| Tables and views in the destination database |
 | `images/towsonuni-migrated-tables.png`  | Record-count validation results              |
 
-*Replace these example paths with your actual screenshot filenames.*
-
 ### Outcome
 
 Successfully migrated a sample MySQL database from a local Windows environment to an AWS-hosted Ubuntu EC2 instance. The project demonstrated database export and import, secure file transfer, destination schema configuration, and post-migration validation while keeping the WordPress database separate.
@@ -330,9 +328,8 @@ Successfully migrated a sample MySQL database from a local Windows environment t
 
 ## Key Takeaways
 
-These projects provided hands-on experience with two important cloud engineering activities: deploying a web application in AWS and migrating a relational database to a cloud-hosted environment.
+These projects provided hands-on experience with important cloud engineering activities: deploying a web application in AWS and migrating a relational database to a cloud-hosted environment.
 
-The WordPress project focused on configuring an application stack, while the MySQL migration project focused on moving database structures and data, preserving database objects, and verifying the results.
 
 ## Repository Structure
 
@@ -349,8 +346,6 @@ aws-cloud-migration-projects/
     ├── sql/
     └── screenshots/
 ```
-
-Adapt the folders to match your actual repository contents. Do not upload private keys, passwords, database credentials, or sensitive production data.
 
 ## Disclaimer
 
