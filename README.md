@@ -300,13 +300,13 @@ The migration was completed successfully, and the sample record counts matched t
 
 Add screenshots showing the source database, export, file transfer, import, and validation.
 
-| Screenshot                             | Description                                  |
-| -------------------------------------- | -------------------------------------------- |
-| `screenshots/source-database.png`      | Source `TUDB` schema in MySQL Workbench      |
-| `screenshots/database-export.png`      | SQL dump creation on Windows                 |
-| `screenshots/scp-transfer.png`         | Secure transfer to EC2                       |
-| `screenshots/destination-tables.png`   | Tables and views in the destination database |
-| `screenshots/migration-validation.png` | Record-count validation results              |
+| Screenshot                              | Description                                  |
+| --------------------------------------  | -------------------------------------------- |
+| `images/TUDB.png`                       | Source `TUDB` schema in MySQL Workbench      |
+| `images/datadump-TUDB-migration.png`    | SQL dump creation on Windows                 |
+| `images/sshtransferdump.png`            | Secure transfer to EC2                       |
+| `images/dataload-towsonuni-migrated.png`| Tables and views in the destination database |
+| `images/towsonuni-migrated-tables.png`  | Record-count validation results              |
 
 *Replace these example paths with your actual screenshot filenames.*
 
