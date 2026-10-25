@@ -74,10 +74,22 @@ sudo systemctl status mysql
 
 **Step 6: Secured the database:** 
 
-Ran ```mysql_secure_installation``` and configured database access.
+Ran ```mysql_secure_installation``` and configured database access. Disabled unnecessary features, enforce authentication, and remove public access.
+ 
+**Step 7: Installed WordPress:** 
 
-11. **Installed WordPress:** Downloaded and extracted the WordPress application files into Apache's web directory.
-12. **Configured file permissions:** Set ownership and permissions for the application files.
+Downloaded and extracted the WordPress application files into Apache's web directory.
+
+```bash
+wget https://wordpress.org/latest.tar.gz
+tar -xvzf latest.tar.gz
+```
+
+**Step 8: Move WordPress Files to Apache Directory**
+
+Remove default Apache Files and moved the WordPress Files unto the Apache main folder.
+
+**Configured file permissions:** Set ownership and permissions for the application files.
 13. **Created the WordPress database:** Created `wordpress_db` and a dedicated MySQL user with database privileges.
 14. **Configured the application:** Updated `wp-config.php` with the database name, username, and password.
 15. **Launched and tested WordPress:** Accessed the EC2 public IP address and completed the initial WordPress setup.
