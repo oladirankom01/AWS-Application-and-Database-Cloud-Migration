@@ -60,6 +60,13 @@ sudo systemctl enable apache2
 sudo systemctl enable mysql
 ```
 
+**Step 5: Check Status of Apache and mySQL**
+
+Ensuring these applications were actively running
+
+<img width="800" src="images/apache-active.png"/>
+<img width="800" src="images/mysql-active.png"/>
+
 10. **Secured the database:** Ran `mysql_secure_installation` and configured database access.
 11. **Installed WordPress:** Downloaded and extracted the WordPress application files into Apache's web directory.
 12. **Configured file permissions:** Set ownership and permissions for the application files.
