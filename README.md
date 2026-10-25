@@ -134,8 +134,6 @@ Accessed the EC2 public IP address and completed the initial WordPress setup.
 
 ### Evidence
 
-Add screenshots demonstrating the deployment process and final result.
-
 | Screenshot                            | Description                                   |
 | ------------------------------------- | --------------------------------------------- |
 | `screenshots/ec2-instance.png`        | Ubuntu EC2 instance running in AWS            |
@@ -143,11 +141,9 @@ Add screenshots demonstrating the deployment process and final result.
 | `images/wordpress-website.png`   | WordPress site accessible through the browser |
 | `images/wordpress-db.png`  | WordPress database tables in MySQL            |
 
-*Replace these example paths with your actual screenshot filenames.*
-
 ### Outcome
 
-Successfully deployed WordPress on an AWS EC2 instance and configured its application stack and MySQL database connection. This project provided practical experience with Linux administration, web application deployment, and database configuration in AWS.
+Successfully deployed WordPress on an AWS EC2 instance and configured its application stack and MySQL database connection. This project provided practical experience of a application migrations for a website being hosted on a company's on-premise server to an EC2 instance in AWS. The benefits are flexibility, easier to manage, and an innovative solution
 
 ---
 
