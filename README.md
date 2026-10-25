@@ -105,8 +105,6 @@ FLUSH PRIVILEGES;
 EXIT;
 ```
 
-<img width="900" src="images/php-configuration.png"/>
-
 **Step 11: Configured the application:** 
 
 Change name of the PHP file to `wp-config.php`. Updated `wp-config.php` with the database name, username, and password.
@@ -116,6 +114,8 @@ define('DB_NAME', 'wordpress_db');
 define('DB_USER', 'wordpress_user');
 define('DB_PASSWORD', 'your_password');
 ```
+
+<img width="900" src="images/php-configuration.png"/>
 
 **Step 12: Restart Apache and delete the default index.html**
 
