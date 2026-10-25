@@ -39,15 +39,33 @@ Updating the package manager and the applications/security features in on the se
 ```bash
 sudo apt update && sudo apt upgrade
 ```
-5. Applied available package updates.
-6. **Installed the application stack:** Configured Apache, PHP, PHP-MySQL integration, and MySQL Server.
-7. **Configured services:** Started Apache and MySQL and enabled them to launch at system startup.
-8. **Secured the database:** Ran `mysql_secure_installation` and configured database access.
-9. **Installed WordPress:** Downloaded and extracted the WordPress application files into Apache's web directory.
-10. **Configured file permissions:** Set ownership and permissions for the application files.
-11. **Created the WordPress database:** Created `wordpress_db` and a dedicated MySQL user with database privileges.
-12. **Configured the application:** Updated `wp-config.php` with the database name, username, and password.
-13. **Launched and tested WordPress:** Accessed the EC2 public IP address and completed the initial WordPress setup.
+**Step 3: Installed the application stack:**
+   
+Configured Apache, PHP, and MySQL Server.
+
+```bash
+sudo apt install apache2 -y
+sudo apt install php libapache2-mod-php php-mysql -y
+sudo apt install mysql-server -y
+```
+
+**Step 4: Configured services:**
+
+Started Apache and MySQL and enabled them to launch at system startup.
+
+```bash
+sudo systemctl start apache2
+sudo systemctl start mysql
+sudo systemctl enable apache2
+sudo systemctl enable mysql
+```
+
+10. **Secured the database:** Ran `mysql_secure_installation` and configured database access.
+11. **Installed WordPress:** Downloaded and extracted the WordPress application files into Apache's web directory.
+12. **Configured file permissions:** Set ownership and permissions for the application files.
+13. **Created the WordPress database:** Created `wordpress_db` and a dedicated MySQL user with database privileges.
+14. **Configured the application:** Updated `wp-config.php` with the database name, username, and password.
+15. **Launched and tested WordPress:** Accessed the EC2 public IP address and completed the initial WordPress setup.
 
 ### Evidence
 
