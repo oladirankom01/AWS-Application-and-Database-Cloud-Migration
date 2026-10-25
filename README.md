@@ -27,11 +27,15 @@ Deploy a functional WordPress website on an Ubuntu EC2 instance by configuring t
 ### Implementation Steps
 
 1. **Provisioned an EC2 instance:**
+   
       Launched an Ubuntu Server in AWS using version 24.04 ami. Also used t3.small for 2GBs of RAM.
+   
    <img width="800" src="images/ec2-instance.png"/>
 
 3. **Updated the operating system:**
+
    Updating the package manager and the applications/security features in on the server.
+   
 ```bash
 sudo apt update && sudo apt upgrade
 ```
