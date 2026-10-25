@@ -87,12 +87,28 @@ tar -xvzf latest.tar.gz
 
 **Step 8: Move WordPress Files to Apache Directory**
 
-Remove default Apache Files and moved the WordPress Files unto the Apache main folder.
+Moved the WordPress Files unto the Apache main folder where it'll be accessed my the public.
 
-**Configured file permissions:** Set ownership and permissions for the application files.
-13. **Created the WordPress database:** Created `wordpress_db` and a dedicated MySQL user with database privileges.
-14. **Configured the application:** Updated `wp-config.php` with the database name, username, and password.
-15. **Launched and tested WordPress:** Accessed the EC2 public IP address and completed the initial WordPress setup.
+**Step 9: Configured file permissions:** 
+
+Set ownership and permissions to give Apache read and write authorization to the WordPress files to prevent issues.
+
+**Step 10: Created the WordPress database:**
+
+Log into mySQL as root  and create `wordpress_db` and a dedicated MySQL user with database privileges. This user will handle the admin work in the database for WordPress.
+
+```bash
+
+CREATE USER 'wordpress_user'@'localhost' IDENTIFIED BY 'your_password';
+GRANT ALL PRIVILEGES ON wordpress_db.* TO 'wordpress_user'@'localhost';
+FLUSH PRIVILEGES;
+EXIT;
+```
+
+**Step 11: Configured the application:** 
+
+Updated `wp-config.php` with:the database name, username, and password.
+16. **Launched and tested WordPress:** Accessed the EC2 public IP address and completed the initial WordPress setup.
 
 ### Evidence
 
