@@ -132,6 +132,8 @@ Accessed the EC2 public IP address and completed the initial WordPress setup.
 <img width="900" src="images/wordpress-app.png"/>
 
 
+
+
 ### Evidence
 
 Add screenshots demonstrating the deployment process and final result.
@@ -139,9 +141,9 @@ Add screenshots demonstrating the deployment process and final result.
 | Screenshot                            | Description                                   |
 | ------------------------------------- | --------------------------------------------- |
 | `screenshots/ec2-instance.png`        | Ubuntu EC2 instance running in AWS            |
-| `screenshots/apache-mysql-status.png` | Apache and MySQL service status               |
-| `screenshots/wordpress-website.png`   | WordPress site accessible through the browser |
-| `screenshots/wordpress-database.png`  | WordPress database tables in MySQL            |
+| `images/apache-mysql-status.png` | Apache and MySQL service status               |
+| `images/wordpress-website.png`   | WordPress site accessible through the browser |
+| `images/wordpress-db.png`  | WordPress database tables in MySQL            |
 
 *Replace these example paths with your actual screenshot filenames.*
 
