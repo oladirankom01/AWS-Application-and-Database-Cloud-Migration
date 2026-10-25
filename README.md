@@ -279,6 +279,8 @@ FROM towsonuni_db_migrated.student;
 "
 ```
 
+<img width="900" src="images/dataload-towsonuni_migrated.png"/>
+
 ### Migration Results
 
 | Validation check                      | Result     |
