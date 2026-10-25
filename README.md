@@ -105,11 +105,13 @@ FLUSH PRIVILEGES;
 EXIT;
 ```
 
+<img width="900" src="images/php-configuration.png"/>
+
 **Step 11: Configured the application:** 
 
-Change name of file to `wp-config.php`. Updated `wp-config.php` with the database name, username, and password.
+Change name of the PHP file to `wp-config.php`. Updated `wp-config.php` with the database name, username, and password.
 
-```bash
+```PHP
 define('DB_NAME', 'wordpress_db');
 define('DB_USER', 'wordpress_user');
 define('DB_PASSWORD', 'your_password');
