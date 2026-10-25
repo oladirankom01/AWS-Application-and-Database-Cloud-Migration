@@ -107,8 +107,30 @@ EXIT;
 
 **Step 11: Configured the application:** 
 
-Updated `wp-config.php` with:the database name, username, and password.
-16. **Launched and tested WordPress:** Accessed the EC2 public IP address and completed the initial WordPress setup.
+Change name of file to `wp-config.php`. Updated `wp-config.php` with the database name, username, and password.
+
+```bash
+define('DB_NAME', 'wordpress_db');
+define('DB_USER', 'wordpress_user');
+define('DB_PASSWORD', 'your_password');
+```
+
+**Step 12: Restart Apache and delete the default index.html**
+
+This allows Apache to see the changes you implemented and removes the index.html file that shows Apache works to see WordPress instead
+
+```bash
+sudo systemctl restart apache2
+sudo rm /var/www/html/index.html
+```
+
+**Step 13: Launched and tested WordPress:**
+
+Accessed the EC2 public IP address and completed the initial WordPress setup.
+
+<img width="900" src="images/wordpress-connected.png"/>
+<img width="800" src="images/wordpress-app.png"/>
+
 
 ### Evidence
 
