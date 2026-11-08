@@ -122,6 +122,10 @@ EXIT;
 Change name of the PHP file to `wp-config.php`. Updated `wp-config.php` with the database name, username, and password.
 
 ```PHP
+sudo mv /var/www/html/wp-config-sample.php /var/www/html/wp-config.php
+```
+
+```PHP
 define('DB_NAME', 'wordpress_db');
 define('DB_USER', 'wordpress_user');
 define('DB_PASSWORD', 'your_password');
