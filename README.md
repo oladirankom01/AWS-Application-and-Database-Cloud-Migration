@@ -119,10 +119,14 @@ EXIT;
 
 **Step 11: Configured the application:** 
 
-Change name of the PHP file to `wp-config.php`. Updated `wp-config.php` with the database name, username, and password.
-
+Change name of the PHP file to `wp-config.php`. 
 ```bash
 sudo mv /var/www/html/wp-config-sample.php /var/www/html/wp-config.php
+```
+
+Updated `wp-config.php` with the database name, username, and password.
+```bash
+sudo nano /var/www/html/wp-config.php
 ```
 
 ```PHP
