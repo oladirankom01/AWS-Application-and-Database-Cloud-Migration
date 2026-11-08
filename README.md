@@ -245,7 +245,7 @@ scp -i "C:\Users\<username>\okomolafe-keypair.pem" `
 
 #### Step 4: Create the destination database
 
-Created a separate database on the EC2 instance to preserve the existing WordPress database.
+Created a separate database on mySQL in the EC2 instance to preserve the existing WordPress database.
 
 ```sql
 CREATE DATABASE towsonuni_db_migrated;
@@ -253,7 +253,7 @@ CREATE DATABASE towsonuni_db_migrated;
 
 #### Step 5: Prepare the SQL dump
 
-Updated the database-selection references in a copy of the SQL dump so that the import would target `towsonuni_db_migrated`.
+Exit out of mySQL and updated the database-selection references in a copy of the SQL dump so that the import would target `towsonuni_db_migrated`.
 
 ```bash
 sed 's/`TUDB`/`towsonuni_db_migrated`/g' \
@@ -313,6 +313,17 @@ FROM towsonuni_db_migrated.student;
 | Existing WordPress database preserved | Yes        |
 
 The migration was completed successfully, and the sample record counts matched the source database.
+
+Confirm data entry for each table in mySQL:
+```sql
+SELECT * FROM towsonuni_db_migrated.department;
+```
+```sql
+SELECT * FROM towsonuni_db_migrated.employee;
+```
+```sql
+SELECT * FROM towsonuni_db_migrated.student;
+```
 
 <img width="900" src="images/towsonuni_migrated-tables.png"/>
 
