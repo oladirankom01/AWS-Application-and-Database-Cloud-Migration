@@ -100,6 +100,11 @@ sudo mv wordpress/* /var/www/html/
 
 Set ownership and permissions to give Apache read and write authorization to the WordPress files to prevent issues.
 
+```bash
+sudo chown -R www-data:www-data /var/www/html/
+sudo chmod -R 755 /var/www/html/
+```
+
 **Step 10: Created the WordPress database:**
 
 Log into mySQL as root  and create `wordpress_db` and a dedicated MySQL user with database privileges. This user will handle the admin work in the database for WordPress.
