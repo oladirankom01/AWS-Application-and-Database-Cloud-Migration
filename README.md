@@ -92,6 +92,10 @@ tar -xvzf latest.tar.gz
 
 Moved the WordPress Files unto the Apache main folder where it'll be accessed my the public.
 
+```bash
+sudo mv wordpress/* /var/www/html/
+```
+
 **Step 9: Configured file permissions:** 
 
 Set ownership and permissions to give Apache read and write authorization to the WordPress files to prevent issues.
