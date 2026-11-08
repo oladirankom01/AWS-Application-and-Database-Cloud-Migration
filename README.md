@@ -121,7 +121,7 @@ EXIT;
 
 Change name of the PHP file to `wp-config.php`. Updated `wp-config.php` with the database name, username, and password.
 
-```PHP
+```bash
 sudo mv /var/www/html/wp-config-sample.php /var/www/html/wp-config.php
 ```
 
